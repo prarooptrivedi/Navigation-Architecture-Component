@@ -9,10 +9,14 @@
         android:id="@+id/homeFragment"
         android:name="com.example.navigationarchitecturecomponent.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_secondFragment2"
+            app:destination="@id/secondFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment2"
         android:name="com.example.navigationarchitecturecomponent.SecondFragment"
         android:label="fragment_second2"
-        tools:layout="@layout/fragment_second2" />
+        tools:layout="@layout/fragment_second" />
 </navigation>
