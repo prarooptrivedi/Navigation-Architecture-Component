@@ -26,6 +26,9 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_home, container, false)
         databinding=DataBindingUtil.inflate(inflater,R.layout.fragment_home, container, false)
+        databinding.button1.setOnClickListener{
+            it.findNavController().navigate(R.id.action_homeFragment_to_notification)
+        }
         databinding.button.setOnClickListener{
             if (!TextUtils.isEmpty(databinding.editText.text.toString())){
 
